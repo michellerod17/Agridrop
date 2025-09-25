@@ -41,7 +41,7 @@ cropForm.addEventListener('submit', async e=>{
   const params = new URLSearchParams({ water, region, land: landSize });
 
   try{
-    const response = await fetch(`http://127.0.0.1:5000/recommend?${params}`);
+    const response = await fetch(`https://agridrop.onrender.com/recommend?${params}`);
     if(!response.ok){
       const errorData = await response.json();
       throw new Error(errorData.error || "Failed to fetch data from backend.");
