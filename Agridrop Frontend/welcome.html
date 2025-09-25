@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Agridrop</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<!-- Slider with Welcome Text -->
+<div class="slider-container">
+  <div class="welcome-overlay">
+    <h1>Welcome to Agridrop</h1>
+    <p>Your smart guide to water-efficient crops</p>
+  </div>
+
+  <div class="slides">
+    <div class="slide active">
+      <img src="images/millet.webp" alt="Millets">
+      <div class="caption">Low water crops like Millets save water.</div>
+    </div>
+    <div class="slide">
+      <img src="images/OIP.jpeg" alt="Maize">
+      <div class="caption">Medium water crops like Maize are profitable.</div>
+    </div>
+    <div class="slide">
+      <img src="images/impact.jpg" alt="Impact">
+      <div class="caption">Agridrop helps farmers plan crops efficiently.</div>
+    </div>
+  </div>
+
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+
+  <div class="enter-app" id="enterApp">🌱 Start Planning Your Crops</div>
+</div>
+
+<!-- App Section -->
+<div class="app-container" style="display:none;">
+  <h2>Agridrop – Water-Efficient Crop Planner</h2>
+  <form id="cropForm">
+    <label>Region:</label>
+    <select id="region" required>
+      <option value="">Select Region</option>
+      <option>South India</option>
+      <option>North India</option>
+      <option>East India</option>
+      <option>West India</option>
+    </select>
+
+    <label>Water Availability:</label>
+    <select id="water" required>
+      <option value="">Select Water Availability</option>
+      <option>Low</option>
+      <option>Medium</option>
+      <option>High</option>
+    </select>
+
+    <label>Land Size (in acres):</label>
+    <input type="number" id="landSize" placeholder="Enter size in acres" min="0.1" step="0.1" required>
+
+    <button type="submit">Get Recommendations</button>
+  </form>
+
+  <div id="results"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
