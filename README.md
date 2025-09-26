@@ -24,5 +24,5 @@ Agridrop is a smart web application designed to help farmers plan crops efficien
 
 ---
 
-## 📂 Project Structure
+
 
