@@ -1,6 +1,6 @@
 # 🌾 Agridrop
 
-[Live Demo](https://agridrop.onrender.com)
+[Live Demo](https://agridrop-1.onrender.com)
 
 Agridrop is a smart web application designed to help farmers plan crops efficiently based on **water availability**, **region**, and **land size**. Make informed decisions, optimize yield, and maximize profit with minimal effort!  
 
